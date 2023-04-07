@@ -43,7 +43,7 @@ resource "kubernetes_deployment" "Django-API" {
             }
             #Este delay serve para, caso a nossa aplicação demore para subir, o liveness_probe demora
             #igualmente para fazer as requisições
-            initial_delay_seconds = 3
+            initial_delay_seconds = 300
             period_seconds        = 3
           }
         }
